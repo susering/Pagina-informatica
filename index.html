@@ -1,44 +1,128 @@
 <!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EESTN°5 INFORMATICA</title>
-    <!--css-->
     <link rel="stylesheet" href="style.css">
-
     <link rel="shortcut icon" href="multimedia/images-removebg-preview.png" type="image/x-icon">
 </head>
 <body>
-      <header>
-        <a href="#inic">Inicio</a>
-        <a href="#queVemos">Que vemos</a>
-        <a href="#porQue">Porque Informatica</a>
-        <a href="#future">A Futuro</a>
-        <h1>Informatica</h1>
+    <header>
+        <div class="header-bar">
+            <span class="logo">EEST N°5 <span class="logo-accent">/&gt; informática</span></span>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav id="nav-menu" class="nav-menu">
+            <a href="#inic" class="nav-link">Inicio</a>
+            <a href="#queVemos" class="nav-link">Qué vemos</a>
+            <a href="#porQue" class="nav-link">Por qué Informática</a>
+            <a href="#future" class="nav-link">A futuro</a>
+        </nav>
+        <h1>Informática</h1>
     </header>
 
     <main class="especialidad" id="inic">
         <div>
-            <h2>¿En que conciste la especialidad?</h2>
-            <p></p>
+            <h2>¿En qué consiste la especialidad?</h2>
+            <p>La orientación en Informática forma técnicos capaces de diseñar, programar y mantener sistemas
+            informáticos completos: desde una página web hasta una base de datos que sostiene un negocio.
+            Combina lógica, matemática y creatividad para resolver problemas reales con código, y se cursa
+            con talleres de programación, laboratorios de hardware y proyectos en equipo a lo largo de toda
+            la secundaria técnica.</p>
         </div>
         <div>
-             <h2>¿Que conocimientos se adquieren?</h2>
-            <p></p>
+            <h2>¿Qué conocimientos se adquieren?</h2>
+            <p>Se aprende a pensar algorítmicamente antes de escribir una sola línea de código: analizar un
+            problema, dividirlo en pasos y traducirlo a un lenguaje que la máquina entienda. A partir de ahí,
+            el egresado sale con nociones sólidas de programación, bases de datos, redes, armado y
+            mantenimiento de equipos, y buenas prácticas de trabajo en proyectos colaborativos.</p>
         </div>
     </main>
+
     <section class="queVemos" id="queVemos">
-        <h2>¿Que aprendemos en la especialidad?</h2>
-        <p></p>
-    </section>
-    <section class="porque" id="porQue">
-        <h2>¿Porque elegir informatica?</h2>
-        <p></p>
-    </section>
-    <section class="futuro" id="future">
-        <h2>¿Que se ve a futuro?</h2>
-        <p></p>
+        <h2>¿Qué aprendemos en la especialidad?</h2>
+        <p>A lo largo de los años se trabaja con distintos lenguajes y herramientas, cada uno pensado para
+        un tipo de problema distinto: desde el front-end de una web hasta el control de un microcontrolador.</p>
+        <div class="lang-grid">
+            <article class="lang-card">
+                <h3>HTML &amp; CSS</h3>
+                <p>La base de toda página web: estructura de contenidos y diseño visual.</p>
+            </article>
+            <article class="lang-card">
+                <h3>JavaScript</h3>
+                <p>Le da interactividad al navegador: formularios, animaciones, menús como este.</p>
+            </article>
+            <article class="lang-card">
+                <h3>Python</h3>
+                <p>Sintaxis clara para arrancar en lógica de programación, automatización y datos.</p>
+            </article>
+            <article class="lang-card">
+                <h3>Java</h3>
+                <p>Programación orientada a objetos, aplicaciones de escritorio y sistemas más grandes.</p>
+            </article>
+            <article class="lang-card">
+                <h3>C++</h3>
+                <p>Trabajo cercano al hardware: memoria, rendimiento y programación de dispositivos.</p>
+            </article>
+            <article class="lang-card">
+                <h3>SQL</h3>
+                <p>El idioma de las bases de datos: guardar, ordenar y consultar información.</p>
+            </article>
+        </div>
     </section>
 
+    <section class="porque" id="porQue">
+        <h2>¿Por qué elegir Informática?</h2>
+        <p>Porque es una de las pocas orientaciones donde lo que aprendés en el aula se puede usar el mismo
+        día para crear algo propio: un programa, una página, una app. Es una disciplina que combina lógica y
+        creatividad, se actualiza todo el tiempo y abre puertas en prácticamente cualquier otro rubro, porque
+        hoy no hay industria que no use tecnología.</p>
+        <ul class="reasons">
+            <li><strong>Alta demanda laboral:</strong> perfiles técnicos en programación y soporte son de los
+            más buscados del mercado, con posibilidad de trabajo remoto.</li>
+            <li><strong>Pensamiento resolutivo:</strong> programar entrena la cabeza para descomponer
+            problemas complejos en pasos simples, algo útil en cualquier campo.</li>
+            <li><strong>Creatividad aplicada:</strong> cada proyecto es una hoja en blanco: la misma consigna
+            admite mil soluciones distintas.</li>
+            <li><strong>Comunidad y trabajo en equipo:</strong> se programa cada vez menos en solitario;
+            se aprende a trabajar en equipo, versionar código y dar y recibir feedback.</li>
+        </ul>
+    </section>
+
+    <section class="futuro" id="future">
+        <h2>¿Qué se ve a futuro?</h2>
+        <p>El título de Técnico en Informática habilita a insertarse en el mundo laboral apenas egresado o a
+        seguir estudiando con buena parte del camino ya recorrido. Algunas salidas posibles:</p>
+        <div class="futuro-grid">
+            <div class="futuro-item">
+                <h3>Desarrollo de software</h3>
+                <p>Programador/a web, de aplicaciones móviles o de videojuegos.</p>
+            </div>
+            <div class="futuro-item">
+                <h3>Infraestructura y redes</h3>
+                <p>Soporte técnico, administración de redes y sistemas.</p>
+            </div>
+            <div class="futuro-item">
+                <h3>Datos y ciberseguridad</h3>
+                <p>Análisis de datos, bases de datos, seguridad informática.</p>
+            </div>
+            <div class="futuro-item">
+                <h3>Estudios superiores</h3>
+                <p>Ingeniería en Sistemas, Licenciatura en Informática, tecnicaturas afines en universidades
+                nacionales o institutos terciarios.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>EEST N°5 — Especialidad en Informática</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
